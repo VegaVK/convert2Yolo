@@ -732,10 +732,10 @@ class YOLO:
             progress_cnt = 0
             printProgressBar(0, progress_length, prefix='\nYOLO Saving:'.ljust(15), suffix='Complete', length=40)
 
-            with open(os.path.abspath(os.path.join(manipast_path, "manifast.txt")), "w") as manipast_file:
+            with open(os.path.abspath(os.path.join(manipast_path, "manifest.txt")), "w") as manipast_file:
 
                 for key in data:
-                    manipast_file.write(os.path.abspath(os.path.join(img_path, "".join([key, img_type, "\n"]))))
+                    manipast_file.write(os.path.join("data/flirData/training/", "".join([key, img_type, "\n"])))
 
                     with open(os.path.abspath(os.path.join(save_path, "".join([key, ".txt"]))), "w") as output_txt_file:
                         output_txt_file.write(data[key])

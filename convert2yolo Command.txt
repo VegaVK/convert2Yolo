@@ -1,0 +1,7 @@
+training:
+
+python3 example.py --datasets COCO --img_path ~/DN_VVK/darknet/data/flirData/training/thermal_8_bit/ --label ~/DN_VVK/darknet/data/flirData/training/Annotations/thermal_annotations.json --convert_output_path ~/DN_VVK/darknet/data/flirData/training/converted/ --img_type ".jpeg" --manipast_path ~/DN_VVK/darknet/data/flirData/ --cls_list_file ~/DN_VVK/darknet/data/flir.names
+
+validation:
+
+python3 example.py --datasets COCO --img_path ~/DN_VVK/darknet/data/flirData/validation/thermal_8_bit/ --label ~/DN_VVK/darknet/data/flirData/validation/Annotations/thermal_annotations.json --convert_output_path ~/DN_VVK/darknet/data/flirData/validation/converted/ --img_type ".jpeg" --manipast_path ~/DN_VVK/darknet/data/flirData/ --cls_list_file ~/DN_VVK/darknet/data/flir.names

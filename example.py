@@ -35,7 +35,7 @@ def main(config):
             flag, data = yolo.generate(data)
             if flag == True:
                 flag, data = yolo.save(data, config["output_path"], config["img_path"] ,
-                                       config["img_type"], config["manipast_path"])
+                                       config["img_type"], "home/vamsi/DN_VVK/darknet/data/flirData/")
 
                 if flag == False:
                     print("Saving Result : {}, msg : {}".format(flag, data))
