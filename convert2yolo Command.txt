@@ -5,3 +5,6 @@ python3 example.py --datasets COCO --img_path ~/DN_VVK/darknet/data/flirData/tra
 validation:
 
 python3 example.py --datasets COCO --img_path ~/DN_VVK/darknet/data/flirData/validation/thermal_8_bit/ --label ~/DN_VVK/darknet/data/flirData/validation/Annotations/thermal_annotations.json --convert_output_path ~/DN_VVK/darknet/data/flirData/validation/converted/ --img_type ".jpeg" --manipast_path ~/DN_VVK/darknet/data/flirData/ --cls_list_file ~/DN_VVK/darknet/data/flir.names
+
+video:
+python3 example.py --datasets COCO --img_path ~/ToDel_FLIR/video/thermal_8_bit/ --label ~/ToDel_FLIR/video/Annotations/thermal_annotations.json --convert_output_path ~/ToDel_FLIR/video/converted/ --img_type ".jpeg" --manipast_path ~/ToDel_FLIR/video/ --cls_list_file ~/DN_VVK/darknet/data/flir.names
