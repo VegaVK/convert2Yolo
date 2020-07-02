@@ -31,7 +31,7 @@ for idx in range(len(onlyfiles)):
         tempFileName='/home/vamsi/ToDel_FLIR/video/converted/thermal_8_bit/'+onlyfiles[idx][0:-5]+'.txt'
         if os.path.isfile(tempFileName):
             # data/flirData/training/thermal_8_bit/
-            ManifestLine='data/flirData/training/thermal_8_bit/'+onlyfiles[idx][0:-5]+'a'+str(sdx)+'.txt'+'\n'
+            ManifestLine='data/flirData/training/thermal_8_bit/'+onlyfiles[idx][0:-5]+'a'+str(sdx)+'.jpeg'+'\n'
             ManF.write(ManifestLine)
             with open(tempFileName,"r") as SourceF:
                 with open('/home/vamsi/ToDel_FLIR/Annotations_Str/'+onlyfiles[idx][0:-5]+'a'+str(sdx)+'.txt', "w+") as DestF:
